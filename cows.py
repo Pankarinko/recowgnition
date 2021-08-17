@@ -2,8 +2,8 @@ import tensorflow as tf
 import tensorflow.keras as keras
 from tensorflow.keras import layers
 import numpy as np
-from keras.optimizers import Adam
-from keras.metrics import categorical_crossentropy
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.metrics import categorical_crossentropy
 
 
 model = keras.Sequential(
