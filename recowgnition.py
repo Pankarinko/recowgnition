@@ -39,6 +39,10 @@ mapped_samples = zip(train_samples, train_labels)
 random.shuffle(mapped_samples)
 train_samples, train_labels = zip(*mapped_samples)
 
+for i in train_samples
+    i = i % 100
+
+
 model.add(layers.Activation("softmax"))
 model.compile(Adam(learning_rate=.0001), loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 model.fit(train_samples, train_labels, batch="10", epochs="20", shuffle=True, verbose=2)
