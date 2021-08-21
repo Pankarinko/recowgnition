@@ -4,8 +4,6 @@ from tensorflow.keras import layers
 import random
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.metrics import categorical_crossentropy
-from sklearn.utils import shuffle
-from sklearn.preprocessing import MinMaxScaler
 
 
 
