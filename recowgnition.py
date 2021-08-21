@@ -32,6 +32,10 @@ for i in range(1000)
     train_samples.append(old)
     train_labels.append(1)
 
+train_labels = np.array(train_labels)
+train_samples = np.Array(train_samples)
+train_samples, train_labels = shuffle(train_samples, train_labels)
+
 model.add(layers.Activation("softmax"))
 model.compile(Adam(learning_rate=.0001), loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 model.fit(train_samples, train_labels, batch="10", epochs="20", shuffle=True, verbose=2)
